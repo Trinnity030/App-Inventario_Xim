@@ -60,6 +60,7 @@ class personaController{
             }
             const persona = await personaService.deletePersona(personaId);
             res.json(persona);
+            console.log('Persona eliminada correctamente');
 
         }catch(error){
             res.status(400).json({message: error.message});
